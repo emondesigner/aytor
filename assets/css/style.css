@@ -1,0 +1,230 @@
+/* Template Information start */
+/* 
+    Tamplate Name : Aytor
+    Author : Ayto
+    Version: 1.0.0
+    Designed By: Aytor
+    Author URL :
+    Description :
+ */
+/* Template Information end */
+
+
+/* Table of Content Start */
+/*
+0.0) Common Section css
+
+
+
+
+ */
+/* Table of Content End */
+
+/* Common code START */
+:root{
+    --text-color:#11161E;
+    --hover-dark-color:#151A32;
+    --light-color:#FFFFFF;
+    --dark-color:#000000;
+    --primary-color-light:#FF6F61;
+    --primary-color-dark:#FF5645;
+    --paragraph-color:#444444;
+    --bg-color-light:#F1F1F1;
+    --bg-color-dark:#F1F3F4;
+    --border-color:#8C8C8C;
+    --box-shadow-22: 0 3px 10px 0 rgba(0, 0, 0, 0.08);
+    --box-shadow-32: 0 0 50px 0 rgba(21, 26, 50, 0.1);
+    --box-shadow-42: 0 5px 30px 0 rgba(17, 22, 30, 0.08);
+    --primary-font: "Josefin Sans", sans-serif;
+    --body-font:"Roboto", sans-serif;
+}
+/* Common code END */
+
+/* HEADER SECTION START */
+ /* TOP BAR */
+ #top-bar{
+    background-color:var(--hover-dark-color);
+    color: var(--light-color);
+    padding: 11px 0;
+ }
+#top-bar .top-bar-left p{
+  font-size: 16px;
+  line-height: 28px;
+
+}
+#top-bar .top-bar-left p i,
+#top-bar .top-bar-left p span:last-child{
+    color: var( --primary-color-light);
+}
+#top-bar .top-bar-left p span:first-child{
+    text-transform: uppercase;
+}
+#top-bar .top-bar-right ul.social-icon li a{
+  padding:0 10px;
+  color: var(--light-color);
+  font-size: 20px;
+  transition: .4s;
+}
+#top-bar .top-bar-right ul.social-icon li:hover a{
+    color: var(--primary-color-light);
+}
+#top-bar .top-bar-right ul:first-child li select{
+    background: none;
+    color: var(--light-color);
+    border: none;
+    font-size: 16px;
+    line-height: 28px;
+    
+}
+#top-bar .top-bar-right ul:first-child li{
+    padding: 0 20px;
+    border-right: 1px solid var(--border-color);
+}
+#top-bar .top-bar-right ul:first-child li a{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--light-color);
+}
+#top-bar .top-bar-right ul:first-child li:hover a{
+    color: var(--primary-color-light);
+}
+
+/* NAVBAR SECTION START */
+#navber{
+    padding: 18px 0;
+    align-items: center;
+}
+#navber .main-menu:last-child  ul i {
+    /* margin-right: 248px; */
+    font-size: 24px;
+    padding-right: 20px;
+    line-height: -3px;
+    color: var(--dark-color);
+}
+#navber .main-menu .menu{
+    margin-right: 248px;
+}
+#navber .main-menu .menu ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0 0  0 28px;
+}
+#navber .main-menu .menu ul li a{
+    color: var(--text-color);
+    cursor: pointer;
+}
+#navber .main-menu .menu ul li:hover a,
+#navber .main-menu .menu ul li select:hover{
+    color: var( --primary-color-light);
+}
+#navber .main-menu .menu ul li  select,
+#navber .main-menu .menu ul li  select option {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* #navber .main-menu .card-menu ul li.sarch .sarchBtn{
+    position: relative;
+}
+#navber .main-menu .card-menu ul li.sarch .sarchBtn{
+    position: absolute;
+    top: 150px;
+    padding: 10px 5px;
+    outline: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+#navber .main-menu .card-menu ul li.sarch .sarchBtn.active{
+    opacity: 1;
+    visibility: visible;
+} */
+/* NAVBAR SECTION END */
+/* HEADER SECTION END */
+
+/* BANNER SECTION START  */
+#banner {
+
+    background-image: url(../images/Banner.jpg);
+    background-position: center;
+     background-size: cover;
+    background-repeat: no-repeat;
+    padding: 241px 0 281px 0;
+}
+#banner h5{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dark-color);
+    
+}
+#banner h1{
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--dark-color);
+    line-height: 74px;
+    padding: 15px 0;
+}
+#banner p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-color);
+    line-height: 18px;
+    padding-bottom: 29px;
+}
+#banner button.btn{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--light-color);
+    line-height: 30px;
+
+}
+#banner button{
+    padding: 13px 38px;
+    background-color:var(--primary-color-light);
+    font-weight: 600;
+
+}
+#banner button.btn i{
+    padding-left: 10px;
+}
+/* BANNER SECTION END */
+
+/* PRODUCT ITEM SECTION START */
+#featured{
+    padding:80px 0;
+}
+#featured .featured-item{
+    position: relative;
+}
+#featured .featured-item .overlay{
+    position: absolute;
+    inset:20px;
+    background: rgba(17, 22, 30, 0.5);
+    color:var(--light-color);
+    transform: scale(0);
+    transition: .4s;
+}
+#featured .featured-item:hover .overlay{
+    transform: scale(1);
+}
+#featured .featured-item .overlay h3{
+    font-size:22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: var(--primary-font);
+}
+#featured .featured-item .overlay h3:hover{
+    color: var(--primary-color-light);
+}
+#featured .featured-item .overlay a{
+    font-size: 16px;
+    color:var(--light-color);
+    font-family: var(--primary-font);
+    
+}
+#featured .featured-item .overlay a:hover{
+    color: var(--primary-color-light);
+}
+/* PRODUCT ITEM SECTION END */
